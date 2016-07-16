@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.demo{
+			width: 100px;
+			height: 100px;
+			border:2px solid black;
+			/*background: white;*/
+			position: relative;
+		}
+		.demo:before{
+			position: absolute;
+			left:100%;
+			top: 20px;
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			content:'';
+			border-left-color: #000;
+		}
+		.demo:after{
+			position: absolute;
+			left:100%;
+			top: 22px;
+			width: 0;
+			height: 0;
+			border: 8px solid transparent;
+			content:'';
+			border-left-color: #fff;
+		}
+		/*a {  
+		    position: relative;  
+		    display: inline-block;  
+		    outline: none;  
+		    text-decoration: none;  
+		    color: #000;  
+		    font-size: 32px;  
+		    padding: 5px 10px;  
+		}  
+  
+		a:hover::before, a:hover::after { position: absolute; }  
+		a:hover::before { content: "\5B"; left: -20px; }  
+		a:hover::after { content: "\5D"; right:  -20px; }  */
+	</style>
+	<body>
+		<div class="demo">
+			
+		</div>
+		<a href="">aaaa</a>
+	</body>
+</html>
